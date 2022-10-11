@@ -42,6 +42,8 @@ echo "https://github.com/gohugoio/hugo/releases/download/${HUGO_VERSION}/hugo_ex
 curl -sSL https://github.com/gohugoio/hugo/releases/download/${HUGO_VERSION}/hugo_extended_${HUGO_VERSION_SHORT}_Linux-64bit.tar.gz | tar -xvzf-
 mv hugo /usr/local/bin/
 cd .. && rm -rf tmp/
+pwd
+ls
 hugo version || exit 1
 
 # Build
